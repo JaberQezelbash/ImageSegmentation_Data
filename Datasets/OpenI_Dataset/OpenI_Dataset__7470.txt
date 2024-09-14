@@ -1,0 +1,110 @@
+Source:
+https://openi.nlm.nih.gov/faq#collection
+
+
+Open-i images are from one of the following sources:
+
+    The Open Access Subset of PubMed Central (PMC), a free full-text archive of biomedical and life sciences journal literature at the U.S. National Library of Medicine.
+    The Indiana University hospital network.
+    The Orthopedic Surgical Anatomy Teaching Collection (http://digitallibrary.usc.edu/cdm/landingpage/collection/p15799coll50) at the USC Digital Library (http://digitallibrary.usc.edu/).
+    Images from the History of Medicine Division (https://www.nlm.nih.gov/hmd/) from the U.S. National Library of Medicine.
+    MedPix (https://medpix.nlm.nih.gov/)
+
+Reuse of Open-i images is determined by the license type of the image. A link to the applicable license type, if available, may be found below the individual Open-i image on the detailed view page.
+
+Please refer to the following web page for information on the PMC open access subset and the PMC Copyright Notice:
+http://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/
+http://www.ncbi.nlm.nih.gov/pmc/about/copyright/
+
+If copyright restrictions for an image in the PubMed Central collection are not specified or are unclear, please contact the journal directly that published the image.
+
+To navigate to the full version of the paper at the journal publisher site, please follow the link to PubMed® located below the title. When viewing the abstract in PubMed, use the links to the full text in the upper right corner to get to the journal that published the paper containing the image. If a link to HTML is available below the title, it will bring you to the journal directly.
+
+Images from the Indiana University hospital network are distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ).
+
+Images from the Orthopaedic Surgical Anatomy Teaching Collection at the USC Digital Library have the following Rights statement:
+Distributed under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-nc-sa/2.5/) that permits unrestricted use, distribution and reproduction in any medium, provided the work is attributed to Irving Rehman, Ph.D., F.I.C.S., and Chadwick F. Smith, M.D., Ph.D., F.A.C.S., F.I.C.S., and source in the manner specified by the publisher.
+
+Please refer to the following web page for copyright information for Images from the History of Medicine:
+https://www.nlm.nih.gov/hmd/copyright/
+
+MedPix® images and case materials were contributed by many individuals. They are organized, reviewed, approved, and curated free of charge for your personal use and for local teaching at your institution - including distribution of handouts and syllabi. For anything other than personal use, you should respect the original contributor and contact them for additional permission requests. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Indiana University hospital network chest X-ray dataset from the OpenI initiative is a rich collection of chest radiographs (X-rays) provided by the National Library of Medicine (NLM). It is often used for research in medical imaging, specifically for image classification, retrieval, and diagnostic purposes. Let me explain the details of what this dataset typically contains:
+
+1. Image Format and Structure
+Format: The dataset you downloaded consists of PNG images. These are grayscale images, typically representing posteroanterior (PA) and lateral (LAT) chest X-rays.
+Resolution: The resolution of these images may vary, but they are generally stored in 512x512 pixels or higher. The images are stored in a 16-bit grayscale format, ensuring high contrast and quality, suitable for medical research.
+2. Types of X-rays
+The dataset primarily includes two common types of chest X-rays:
+Posteroanterior (PA) Views: The X-ray is taken from the back of the patient, with the chest placed against the film. This is the standard view used in most diagnostic cases.
+Lateral (LAT) Views: The X-ray is taken from the side, giving a lateral perspective of the chest.
+These views provide complementary angles for a comprehensive examination of the lungs, heart, and surrounding structures.
+
+3. Number of Images
+The number of images varies depending on the subset you downloaded, but this particular dataset is one of the smaller collections in comparison to others like the ChestX-ray14 dataset from NIH. The total number of images is usually a few thousand, with images coming from different patients, including both normal and pathological cases.
+4. Image Content
+The dataset is primarily composed of chest X-rays from various clinical settings, showing both healthy lungs and various disease conditions. Some common diseases or abnormalities you might encounter in the dataset include:
+Pneumonia
+Atelectasis (collapse of part of a lung)
+Cardiomegaly (enlarged heart)
+Nodule/Mass
+Pneumothorax (collapsed lung)
+Pleural Effusion (fluid in the pleural space)
+Tuberculosis (in some cases)
+5. Associated Metadata
+One of the key features of the OpenI initiative is that the images are often associated with radiology reports. These reports include:
+Findings: A description of what the radiologist observed in the X-ray.
+Impression: The radiologist's diagnosis or summary of the findings.
+Indications: The reason the patient was referred for a chest X-ray (e.g., cough, chest pain, suspected pneumonia).
+Clinical History: Brief patient history relevant to the X-ray.
+These reports can be critical for research purposes, as they provide ground-truth labels for various pathological conditions. You may find the radiology reports stored as XML or CSV files, providing a structured way to access diagnostic information.
+
+6. Labels for Conditions
+The dataset contains labels for multiple thoracic diseases (typically up to 14 categories). These labels are associated with the conditions identified in the radiology reports.
+Common labels include:
+Normal
+Abnormal (and further subclassifications into specific pathologies)
+In some cases, the conditions are labeled as “positive” or “negative” for specific diseases, allowing for easy filtering of data for targeted studies.
+
+7. Use for Segmentation or Classification
+This dataset can be used for a variety of tasks:
+Classification: Categorizing the X-rays into normal and abnormal categories or identifying specific conditions (e.g., pneumonia vs. normal).
+Segmentation: Annotating specific lung regions or disease areas (though segmentation masks are typically not provided in the original dataset; researchers generate them using external tools or manual labeling).
+Disease Localization: Identifying the location of diseases like nodules or infiltrates using bounding boxes or other methods.
+8. Dataset Subdivision
+You might encounter the dataset broken down into different subsets based on:
+Study type: The study may include PA or lateral views.
+Condition: Images may be grouped by the presence of specific conditions like pneumonia, tuberculosis, or cardiomegaly.
+Patient history: The dataset might also provide demographic information such as age, sex, and clinical indications for the X-ray, allowing researchers to filter the dataset by patient characteristics.
+9. Preprocessing
+The dataset may require preprocessing steps such as:
+Normalization of pixel values to enhance contrast for certain tasks.
+Resizing the images for deep learning applications (if you're working with models that require a fixed input size).
+Data augmentation for machine learning tasks to improve the generalization of models.
+Summary
+The chest X-ray dataset from the Indiana University hospital network via the OpenI initiative provides:
+
+Posteroanterior (PA) and Lateral (LAT) chest X-ray images in PNG format, typically with high-resolution and grayscale.
+Images of both normal cases and various pathological conditions such as pneumonia, lung nodules, and cardiomegaly.
+Radiology reports accompanying the images, which detail the findings, impressions, and patient history, making it suitable for medical image classification, segmentation, and disease detection tasks.
+It is an excellent dataset for training machine learning models in tasks related to chest pathology detection, classification, and image-based diagnosis.
