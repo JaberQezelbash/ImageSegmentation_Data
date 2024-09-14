@@ -1,0 +1,28 @@
+The Montgomery dataset is widely used in medical image analysis, particularly for tuberculosis (TB) detection and lung segmentation tasks. 
+
+
+Montgomery County X-ray Set (MC Set)
+Source: Collected by the U.S. National Library of Medicine (NLM) in collaboration with the Department of Health and Human Services, Montgomery County, Maryland, USA.
+
+Number of Images:
+
+The Montgomery set contains 138 posteroanterior (PA) chest X-ray images. PA views are taken with the patient standing, with their chest against the X-ray film and the X-ray beam passing from the back to the front of the body.
+Image Format and Size:
+
+Images are provided in 16-bit grayscale PNG format, with sizes varying around 4020 x 4892 pixels. They are high-resolution, which is useful for detailed medical analysis.
+Labels:
+
+The dataset is labeled based on whether the patients show signs of tuberculosis or are normal.
+Out of the 138 images:
+80 images are of healthy patients (normal lungs).
+58 images are of patients with tuberculosis (showing signs of pulmonary TB).
+Segmentation Annotations:
+
+Lung masks are provided for the images. These masks are typically binary images where each pixel in the image is either marked as belonging to the lung region (1) or the background (0).
+These lung masks are used for lung segmentation tasks, and they help in focusing on the region of interest for further diagnosis, such as identifying lesions related to TB.
+
+
+
+
+Summary:
+Montgomery Dataset: 138 images (80 normal, 58 TB), high-resolution (4020x4892 pixels), with lung masks provided.
