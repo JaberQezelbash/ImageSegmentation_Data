@@ -1,0 +1,41 @@
+
+
+The Shenzhen Dataset is widely used in medical image analysis, particularly for tuberculosis (TB) detection and lung segmentation tasks.
+https://openi.nlm.nih.gov/faq#collection
+
+
+Shenzhen Hospital X-ray Set
+Source: Collected in collaboration with Shenzhen No.3 Hospital, China, and the NLM.
+
+Number of Images:
+
+The Shenzhen set contains 662 posteroanterior (PA) chest X-ray images.
+Image Format and Size:
+
+The images are stored in 8-bit grayscale PNG format. The image sizes vary, but they are typically around 3000 x 3000 pixels, which is somewhat smaller than the Montgomery set but still high enough for medical analysis.
+Labels:
+
+The dataset is labeled based on the presence of tuberculosis or being normal.
+Out of the 662 images:
+326 images show normal chest X-rays.
+336 images show tuberculosis infection, where lesions, cavitations, and other abnormalities related to TB may be visible.
+Segmentation Annotations:
+
+Similar to the Montgomery dataset, the Shenzhen dataset has been used for lung segmentation. However, lung masks may not be directly provided in the original release. Researchers have often used external tools or manual annotations to generate lung masks for this dataset.
+The segmentation tasks focus on isolating the lung regions, which are crucial for the detection of TB-related abnormalities.
+Key Features in the Images:
+Normal Cases:
+These images will show clear and healthy lung regions without any notable abnormalities. The lung fields are clearly visible, and there will be no signs of TB, such as cavities or infiltrates.
+Tuberculosis Cases:
+In the tuberculosis-labeled images, you may observe abnormalities such as lung lesions, cavitation, infiltrates, and nodules. These pathological changes appear in various forms, depending on the stage of TB infection.
+The abnormalities tend to concentrate in the upper lobes of the lungs, which is typical of pulmonary tuberculosis.
+Typical Use for Segmentation:
+Lung Segmentation: Both datasets are frequently used to train models for segmenting the lung area from the background. This is useful for localizing the region of interest before diagnosing diseases or analyzing other pathologies.
+
+Disease Localization: After lung segmentation, the segmented lung region is analyzed to detect disease features like nodules or cavitations caused by tuberculosis.
+
+
+
+
+Summary:
+Shenzhen Dataset: 662 images (326 normal, 336 TB), slightly lower resolution (~3000x3000 pixels), lung masks often generated externally.
