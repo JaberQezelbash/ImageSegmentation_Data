@@ -1,2 +1,3 @@
-# ImageSegmentation
-Image Segmentation DL modelsPublic Datasets
+### ImageSegmentation
+* Image Segmentation DL models
+* Public Datasets
