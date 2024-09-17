@@ -1,3 +1,3 @@
 ### ImageSegmentation
-* Image Segmentation DL models
+* Image Segmentation DL Models
 * Public Datasets
